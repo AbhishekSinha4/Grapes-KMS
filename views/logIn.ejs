@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sign Up</title>
+	<link rel="stylesheet" type="text/css" href="/general.css">
+	<link rel="stylesheet" type="text/css" href="/register.css">
+</head>
+<body>
+	<header><h1><img src="/logo.png">Grapes: Log In</h1></header>
+	<nav>
+		<ul>
+			<li>Company Goals</a></li>
+			<li>Knowledge Managers</a></li>
+			<li>Products</li>
+		</ul>
+		<ul id="log-in">
+			<li><a href="/users/new">Sign Up</a></li>
+			<li><a href="/">Home</a></li>
+		</ul>
+	</nav>
+	<div id="error-box">
+	<% if(typeof status !== 'undefined'){%>
+	<%	 if(status==="emp_not_exist"){ %>
+			<span id="error-head">Error(s):</span>
+			<p>Employee Does Not Exist</p>
+	<%	} %>
+	<%} %>
+	</div>
+	<div id="form-container">
+		<h1>Employee Log In</h1>
+		<form method="POST" action="/users/logIn">
+			<table>
+				<tr>
+					<td>Employee ID:</td>
+					<td><input type="text" name="empID" id="empID"></td>
+				</tr>
+				<tr>
+					<td>Password:</td>
+					<td><input type="password" name="passw" id="passw"></td>
+				</tr>
+				<tr>
+					<td colspan="2"><input type="submit" name="submit" id="submit"></td>
+				</tr>
+			</table>
+		</form>
+	</div>
+	<footer>
+		<ul>
+			<li><a href='about_us.php'>About Us</a></li>
+			<li><a href='#'>F.A.Q</a></li>
+			<li><a href='anti_ragging.php'>Anti-Ragging Policy</a></li>
+			<li><a href='contact.php'>Contact</a></li>
+		</ul>
+		<p>&copy All Rights Reserved</p>
+		<p>Parent site: www.grapily.com</p>
+	</footer>
+<!-- <script type="text/javascript" src="/register.js"></script> -->
+</body>
+</html>

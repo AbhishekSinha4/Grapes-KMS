@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sign Up</title>
+	<link rel="stylesheet" type="text/css" href="/general.css">
+	<link rel="stylesheet" type="text/css" href="/register.css">
+</head>
+<body>
+	<header><h1><img src="/logo.png">Grapes: Sign Up</h1></header>
+	<nav>
+		<ul>
+			<li>Company Goals</a></li>
+			<li>Knowledge Managers</a></li>
+			<li>Products</li>
+		</ul>
+		<ul id="sign-in">
+		<li><a href="/">Home</a></li>
+		<li><a href="/users/logIn">Log In</a></li>
+		</ul>
+	</nav>
+	<div id="error-box">
+		
+	</div>
+	<div id="form-container">
+		<h1>Employee Registration Form</h1>
+		<form method="POST" action="/users/add">
+			<table>
+				<tr>
+					<td>Employee ID:</td>
+					<td><input type="text" name="empID" id="empID"></td>
+				</tr>
+				<tr>
+					<td>Password:</td>
+					<td><input type="password" name="passw" id="passw"></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td><span id="passw-status">Empty</span></td>
+				</tr>
+				<tr>
+					<td>Confirm password:</td>
+					<td><input type="password" name="c_passw" id="c_passw"></td>
+				</tr>
+				<tr>
+					<td colspan="2"><h2>Employee Details:</h2></td>
+				</tr>
+				<tr>
+					<td>Name:</td>
+					<td><input type="text" name="emp_name" id="emp_name"></td>
+				</tr>
+				<tr>
+					<td>Date Of Birth:</td>
+					<td><input type="date" name="emp_dob" id="emp_dob"></td>
+				</tr>
+				<tr>
+					<td>E-mail ID:</td>
+					<td><input type="text" name="emp_email" id="emp_email"></td>
+				</tr>
+				<tr>
+					<td>Mobile Number:</td>
+					<td><input type="number" name="emp_number" id="emp_number"></td>
+				</tr>
+				<tr>
+					<td>Address:</td>
+					<td><textarea name="emp_address" id="emp_address"></textarea></td>
+				</tr>
+				<tr>
+					<td>Department:</td>
+					<td><select name="emp_dept" id="emp_dept">
+						<option>Choose Department</option>
+						<option>Dom1</option>
+						<option>Dom2</option>
+						<option>Dom3</option>
+						<option>Dom4</option>
+						<option>Dom5</option>
+						<option>Dom6</option>
+					</select></td>
+				</tr>
+				<tr>
+					<td colspan="2"><input type="submit" name="submit" id="submit"></td>
+				</tr>
+			</table>
+		</form>
+	</div>
+	<footer>
+		<ul>
+			<li><a href='about_us.php'>About Us</a></li>
+			<li><a href='#'>F.A.Q</a></li>
+			<li><a href='anti_ragging.php'>Anti-Ragging Policy</a></li>
+			<li><a href='contact.php'>Contact</a></li>
+		</ul>
+		<p>&copy All Rights Reserved</p>
+		<p>Parent site: www.grapily.com</p>
+	</footer>
+<script type="text/javascript" src="/register.js"></script>
+</body>
+</html>

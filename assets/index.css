@@ -1,0 +1,57 @@
+
+#banner{
+	height: 900px;
+	position: relative;
+	background: url("homeBK.jpg") no-repeat center;
+	background-size: cover;
+	background-attachment: fixed;
+}
+#banner img{
+	height: 1em;
+}
+#banner>h1{
+	font-size: 3.5em;
+	position: absolute;
+	left:50%;
+	top:45%;
+	transform: translate(-50%,-50%);
+	text-align: center;
+	text-shadow: 1px 1px 10px white;
+}
+
+
+div#content{
+	background: #020;
+	padding: 100px;
+}
+div.col{
+	width: 33%;
+	display: inline-block;
+}
+div.domain{
+	background: #000;
+	color: white;
+	height: 300px;
+	width: 300px;
+	border: 1px solid darkred;
+	box-shadow: 0 0 20px darkred;
+	line-height: 300px;
+	text-align: center;
+	border-radius: 50%;
+	margin: 50px auto;
+	position: relative;
+	font-size: 1.5em;
+
+}
+div.domain:hover {
+	position: relative;
+	/*font-size: 2em;*/
+	box-shadow: 0 0 30px 2pt darkred;
+}
+div.domain h3{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+}
+

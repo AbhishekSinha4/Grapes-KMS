@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Grape</title>
+	<link rel="stylesheet" type="text/css" href="general.css">
+	<link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+<div id="banner">
+	<h1><img src="logo.png">Grapes</h1>
+</div>
+<nav>
+	<ul>
+		<li>Company Goals</a></li>
+		<li>Knowledge Managers</a></li>
+		<li>Products</li>
+	</ul>
+	<ul id="sign-in">
+	<% if (!loggedIn) { %>
+  	<li><a href="/users/new">Sign Up</a></li>
+	<li><a href="/users/logIn">Log In</a></li>
+	<% } else{ %>
+	<li><%= empName %></li>
+	<li><a href="users/logOut">Log Out</a></li>
+	<% } %>
+	
+	</ul>
+</nav>
+<div id="content">
+	<div class="col">
+		<div class="domain"><h3>Dom1</h3></div>
+		<div class="domain"><h3>Dom4</h3></div>
+	</div>
+	<div class="col">
+		<div class="domain"><h3>Dom2</h3></div>
+		<div class="domain"><h3>Dom5</h3></div>
+	</div>
+	<div class="col">
+		<div class="domain"><h3>Dom3</h3></div>
+		<div class="domain"><h3>Dom6</h3></div>
+	</div>
+</div>
+<footer>
+	<ul>
+		<li>About the Staff</li>
+		<li>F.A.Q</li>
+		<li>Company Policy</li>
+		<li>Contact Us</li>
+	</ul>
+	<p>&copy All Rights Reserved</p>
+	<p>Parent site: www.grapily.com</p>
+</footer>
+</body>
+</html>
